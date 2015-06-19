@@ -1,5 +1,5 @@
 //
-//  PositionViewController.swift
+//  OpacityViewController.swift
 //  iOSAnimationSemple
 //
 //  Created by fans on 15/6/19.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class PositionViewController: UIViewController {
+class OpacityViewController: UIViewController {
+    
     @IBOutlet weak var blueSquare: UIView!
 
-    @IBOutlet weak var redSuqare: UIView!
-    
-    @IBOutlet weak var greenSquare: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,21 +26,10 @@ class PositionViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animateWithDuration(1, animations: { 
-            self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
-            
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.blueSquare.alpha = 0.1
         })
         
-        UIView.animateWithDuration(1, delay: 0.5, options: nil, animations: {
-            self.redSuqare.center.y = self.view.bounds.height - self.redSuqare.center.y
-            
-        }, completion: nil)
-        
-        UIView.animateWithDuration(1, delay: 1, options: nil, animations: {
-            self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
-            self.greenSquare.center.y = self.view.bounds.height - self.greenSquare.center.y
-            
-            }, completion: nil)
     }
     /*
     // MARK: - Navigation

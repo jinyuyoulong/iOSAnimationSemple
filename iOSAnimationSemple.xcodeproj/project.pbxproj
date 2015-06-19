@@ -14,6 +14,7 @@
 		38F4C4D01B34021600A04578 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F4C4CE1B34021600A04578 /* LaunchScreen.xib */; };
 		38F4C4DC1B34021600A04578 /* iOSAnimationSempleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4C4DB1B34021600A04578 /* iOSAnimationSempleTests.swift */; };
 		38F4C4E61B3404E600A04578 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4C4E51B3404E600A04578 /* PositionViewController.swift */; };
+		38F4C4E81B3440DD00A04578 /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4C4E71B3440DD00A04578 /* OpacityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		38F4C4DA1B34021600A04578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F4C4DB1B34021600A04578 /* iOSAnimationSempleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAnimationSempleTests.swift; sourceTree = "<group>"; };
 		38F4C4E51B3404E600A04578 /* PositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		38F4C4E71B3440DD00A04578 /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				38F4C4C51B34021600A04578 /* AppDelegate.swift */,
 				38F4C4C71B34021600A04578 /* ViewController.swift */,
 				38F4C4E51B3404E600A04578 /* PositionViewController.swift */,
+				38F4C4E71B3440DD00A04578 /* OpacityViewController.swift */,
 				38F4C4C91B34021600A04578 /* Main.storyboard */,
 				38F4C4CC1B34021600A04578 /* Images.xcassets */,
 				38F4C4CE1B34021600A04578 /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				38F4C4E61B3404E600A04578 /* PositionViewController.swift in Sources */,
 				38F4C4C81B34021600A04578 /* ViewController.swift in Sources */,
+				38F4C4E81B3440DD00A04578 /* OpacityViewController.swift in Sources */,
 				38F4C4C61B34021600A04578 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +419,7 @@
 				38F4C4E11B34021600A04578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38F4C4E21B34021600A04578 /* Build configuration list for PBXNativeTarget "iOSAnimationSempleTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				38F4C4E41B34021600A04578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
