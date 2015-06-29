@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>85AAED1B-9397-4294-A5D1-90AA4AF5894C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOSAnimationSemple</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE4F4584B71362E9C91871CC58D30AA18FE88B31</key>
+		<string>https://github.com/jinyuyoulong/iOSAnimationSemple.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOSAnimationSemple.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE4F4584B71362E9C91871CC58D30AA18FE88B31</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jinyuyoulong/iOSAnimationSemple.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE4F4584B71362E9C91871CC58D30AA18FE88B31</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE4F4584B71362E9C91871CC58D30AA18FE88B31</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSAnimationSemple</string>
+		</dict>
+	</array>
+</dict>
+</plist>
