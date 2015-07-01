@@ -11,6 +11,7 @@
 		3886E2501B43D235002605C9 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E24E1B43D235002605C9 /* ScaleViewController.swift */; };
 		3886E2521B43D283002605C9 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E2511B43D283002605C9 /* ColorViewController.swift */; };
 		3886E2541B43D636002605C9 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E2531B43D636002605C9 /* RepeatViewController.swift */; };
+		3886E2561B43E52A002605C9 /* EaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E2551B43E52A002605C9 /* EaseViewController.swift */; };
 		38F4C4C61B34021600A04578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4C4C51B34021600A04578 /* AppDelegate.swift */; };
 		38F4C4C81B34021600A04578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4C4C71B34021600A04578 /* ViewController.swift */; };
 		38F4C4CB1B34021600A04578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F4C4C91B34021600A04578 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		3886E24E1B43D235002605C9 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		3886E2511B43D283002605C9 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		3886E2531B43D636002605C9 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		3886E2551B43E52A002605C9 /* EaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EaseViewController.swift; sourceTree = "<group>"; };
 		38F4C4C01B34021600A04578 /* iOSAnimationSemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationSemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F4C4C41B34021600A04578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F4C4C51B34021600A04578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				3886E24D1B43D235002605C9 /* RotationViewController.swift */,
 				3886E24E1B43D235002605C9 /* ScaleViewController.swift */,
 				3886E2531B43D636002605C9 /* RepeatViewController.swift */,
+				3886E2551B43E52A002605C9 /* EaseViewController.swift */,
 				38F4C4C91B34021600A04578 /* Main.storyboard */,
 				38F4C4CC1B34021600A04578 /* Images.xcassets */,
 				38F4C4CE1B34021600A04578 /* LaunchScreen.xib */,
@@ -235,6 +238,7 @@
 				38F4C4C81B34021600A04578 /* ViewController.swift in Sources */,
 				3886E2501B43D235002605C9 /* ScaleViewController.swift in Sources */,
 				3886E2521B43D283002605C9 /* ColorViewController.swift in Sources */,
+				3886E2561B43E52A002605C9 /* EaseViewController.swift in Sources */,
 				3886E2541B43D636002605C9 /* RepeatViewController.swift in Sources */,
 				38F4C4E81B3440DD00A04578 /* OpacityViewController.swift in Sources */,
 				38F4C4C61B34021600A04578 /* AppDelegate.swift in Sources */,
