@@ -34,12 +34,12 @@ class RepeatViewController: UIViewController {
         self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
         })
         
-        UIView.animateWithDuration(1, delay: 0, options: .Repeat, animations: {
+        UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.Repeat, animations: {
         self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x
             
         }, completion: nil)
         
-        UIView.animateWithDuration(1, delay: 0, options: .Repeat | .Autoreverse, animations: {
+        UIView.animateWithDuration(1, delay: 0, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
             
             }, completion: nil)

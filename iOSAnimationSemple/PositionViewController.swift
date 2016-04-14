@@ -34,12 +34,12 @@ class PositionViewController: UIViewController {
             
         })
         
-        UIView.animateWithDuration(1, delay: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(1, delay: 0.5, options: UIViewAnimationOptions.TransitionNone, animations: {
             self.redSuqare.center.y = self.view.bounds.height - self.redSuqare.center.y
             
         }, completion: nil)
         
-        UIView.animateWithDuration(1, delay: 1, options: nil, animations: {
+        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.TransitionNone, animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
             self.greenSquare.center.y = self.view.bounds.height - self.greenSquare.center.y
             

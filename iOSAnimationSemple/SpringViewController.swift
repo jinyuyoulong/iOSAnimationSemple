@@ -32,11 +32,11 @@ class SpringViewController: UIViewController {
         self.blueSuqare.center.x = self.view.bounds.width - self.blueSuqare.center.x
         })
         
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: nil, animations: {
+        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: {
             self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x
         }, completion: nil)
         
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: nil, animations: {
+        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: UIViewAnimationOptions.TransitionNone, animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
         }, completion: nil)
     }

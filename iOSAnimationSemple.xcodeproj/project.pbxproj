@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381DBC421CB54C5500CC1C94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DBC411CB54C5500CC1C94 /* LoginViewController.swift */; };
 		3886E24F1B43D235002605C9 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E24D1B43D235002605C9 /* RotationViewController.swift */; };
 		3886E2501B43D235002605C9 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E24E1B43D235002605C9 /* ScaleViewController.swift */; };
 		3886E2521B43D283002605C9 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886E2511B43D283002605C9 /* ColorViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		381DBC411CB54C5500CC1C94 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3886E24D1B43D235002605C9 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
 		3886E24E1B43D235002605C9 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		3886E2511B43D283002605C9 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				3886E2531B43D636002605C9 /* RepeatViewController.swift */,
 				3886E2551B43E52A002605C9 /* EaseViewController.swift */,
 				3886E2571B43EE3F002605C9 /* SpringViewController.swift */,
+				381DBC411CB54C5500CC1C94 /* LoginViewController.swift */,
 				38F4C4C91B34021600A04578 /* Main.storyboard */,
 				38F4C4CC1B34021600A04578 /* Images.xcassets */,
 				38F4C4CE1B34021600A04578 /* LaunchScreen.xib */,
@@ -180,6 +183,7 @@
 		38F4C4B81B34021600A04578 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = fans;
 				TargetAttributes = {
@@ -246,6 +250,7 @@
 				3886E2541B43D636002605C9 /* RepeatViewController.swift in Sources */,
 				38F4C4E81B3440DD00A04578 /* OpacityViewController.swift in Sources */,
 				38F4C4C61B34021600A04578 /* AppDelegate.swift in Sources */,
+				381DBC421CB54C5500CC1C94 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
