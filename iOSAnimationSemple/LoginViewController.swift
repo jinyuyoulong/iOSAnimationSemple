@@ -60,6 +60,8 @@ class LoginViewController: UIViewController {
             self.dot.center.x += self.view.bounds.width/3
             }, completion: nil)
 
+        //
+
     }
 
     /*
