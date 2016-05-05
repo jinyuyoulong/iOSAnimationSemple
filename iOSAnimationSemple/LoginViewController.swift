@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var login: UIButton!
     let spnner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
+    var loginPosition = CGPointZero
+    let warningMessage = UIImageView(image: UIImage(named: "Warning message"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +50,16 @@ class LoginViewController: UIViewController {
         self.password.addSubview(passwd)
         self.password.center.x -= self.view.bounds.width
         self.username.center.x -= self.view.bounds.width
+        
+        self.view.addSubview(self.warningMessage);
+        self.warningMessage.hidden = true
+        self.warningMessage.center = self.login.center
+        self.warningMessage.frame = self.login.frame
+        
+        self.loginPosition = self.login.center
         self.login.center.x -= self.view.bounds.width
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,12 +98,21 @@ class LoginViewController: UIViewController {
         self.login.addSubview(self.spnner)
         self.spnner.frame.origin = CGPointMake(5, 20)
         self.spnner.startAnimating()
+        UIView.transitionWithView(self.warningMessage, duration: 0.3, options: UIViewAnimationOptions.TransitionFlipFromBottom, animations: { () -> Void in
+            self.warningMessage.hidden = true
+            }, completion: nil)
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.login.center = self.loginPosition
+        }
         self.login.center.x -= 30
         UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: { () -> Void in
             self.login.center.x += 30
             }) { _ in
                 self.login.center.y += 80
                 self.spnner.removeFromSuperview()
+                UIView.transitionWithView(self.warningMessage, duration: 0.3, options: UIViewAnimationOptions.TransitionFlipFromTop, animations: { () -> Void in
+                    self.warningMessage.hidden = false
+                    }, completion: nil)
         }
     }
     /*
