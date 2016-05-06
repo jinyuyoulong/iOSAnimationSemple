@@ -20,9 +20,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
 
     @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var loginTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var loginLeading: NSLayoutConstraint!
     let spnner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
     var loginPosition = CGPointZero
     let warningMessage = UIImageView(image: UIImage(named: "Warning message"))
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,11 +57,13 @@ class LoginViewController: UIViewController {
         self.view.addSubview(self.warningMessage);
         self.warningMessage.hidden = true
         self.warningMessage.center = self.login.center
-        self.warningMessage.frame = self.login.frame
+        self.warningMessage.frame = CGRectMake(8, self.password.frame.origin.y+self.password.frame.size.height, self.view.frame.width-8*2, 44)
+//        self.view .addConstraint(NSLayoutConstraint.constra)
+        self.warningMessage.contentMode = UIViewContentMode.ScaleToFill
+//        self.warningMessage.backgroundColor = UIColor.blackColor()
         
         self.loginPosition = self.login.center
         self.login.center.x -= self.view.bounds.width
-        
         
     }
 
@@ -104,9 +109,15 @@ class LoginViewController: UIViewController {
         UIView.animateWithDuration(0.3) { () -> Void in
             self.login.center = self.loginPosition
         }
-        self.login.center.x -= 30
+        self.loginLeading.constant -= 30
+        self.view.setNeedsUpdateConstraints()
+        self.view.layoutIfNeeded()
+        
         UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: { () -> Void in
-            self.login.center.x += 30
+            self.loginLeading.constant += 30
+            self.view.setNeedsUpdateConstraints()
+            self.view.layoutIfNeeded()
+            
             }) { _ in
                 self.login.center.y += 80
                 self.spnner.removeFromSuperview()
