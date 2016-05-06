@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var loginTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginLeading: NSLayoutConstraint!
+    @IBOutlet weak var loginTrailing: NSLayoutConstraint!
     let spnner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
     var loginPosition = CGPointZero
     let warningMessage = UIImageView(image: UIImage(named: "Warning message"))
@@ -53,6 +54,14 @@ class LoginViewController: UIViewController {
         self.password.addSubview(passwd)
         self.password.center.x -= self.view.bounds.width
         self.username.center.x -= self.view.bounds.width
+        
+        // prepare the elements for animations
+//        logo.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+//        dot.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+        userImg.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+        passwd.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+//        login.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0);
+        
         
         self.view.addSubview(self.warningMessage);
         self.warningMessage.hidden = true
@@ -103,28 +112,54 @@ class LoginViewController: UIViewController {
         self.login.addSubview(self.spnner)
         self.spnner.frame.origin = CGPointMake(5, 20)
         self.spnner.startAnimating()
-        UIView.transitionWithView(self.warningMessage, duration: 0.3, options: UIViewAnimationOptions.TransitionFlipFromBottom, animations: { () -> Void in
-            self.warningMessage.hidden = true
-            }, completion: nil)
-        UIView.animateWithDuration(0.3) { () -> Void in
-            self.login.center = self.loginPosition
-        }
-        self.loginLeading.constant -= 30
+//        self.loginTopConstraint.constant += 80
+//        UIView.animateWithDuration(0.3) { 
+//            self.view.layoutIfNeeded()
+//        }
+        self.loginLeading.constant += 30
+        self.loginTrailing.constant += 30
+        self.loginTopConstraint.constant = 120
         self.view.setNeedsUpdateConstraints()
-        self.view.layoutIfNeeded()
-        
-        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: { () -> Void in
-            self.loginLeading.constant += 30
-            self.view.setNeedsUpdateConstraints()
-            self.view.layoutIfNeeded()
-            
-            }) { _ in
-                self.login.center.y += 80
+        UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.TransitionNone, animations: { 
+            self.view.setNeedsLayout()
+            }) { (true) in
                 self.spnner.removeFromSuperview()
-                UIView.transitionWithView(self.warningMessage, duration: 0.3, options: UIViewAnimationOptions.TransitionFlipFromTop, animations: { () -> Void in
-                    self.warningMessage.hidden = false
+                self.loginLeading.constant -= 30
+                self.loginTrailing.constant -= 30
+                UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .TransitionNone, animations: { 
+                    self.view.layoutIfNeeded()
                     }, completion: nil)
+                
+                UIView.transitionWithView(self.warningMessage,
+                                          duration: 0.3,
+                                          options: UIViewAnimationOptions.TransitionFlipFromBottom,
+                                          animations: { () -> Void in
+                                            self.view.layoutIfNeeded()
+                                            self.warningMessage.hidden = false
+                    }, completion: nil)
+                
         }
+        
+        
+        
+//        self.loginLeading.constant -= 30
+//        self.view.setNeedsUpdateConstraints()
+//        self.view.layoutIfNeeded()
+//        
+//        self.loginLeading.constant += 30
+////        self.view.setNeedsUpdateConstraints()
+//        
+//        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: { () -> Void in
+//            
+//            self.view.layoutIfNeeded()
+//            
+//            }) { _ in
+//                self.login.center.y += 80
+//                self.spnner.removeFromSuperview()
+//                UIView.transitionWithView(self.warningMessage, duration: 0.3, options: UIViewAnimationOptions.TransitionFlipFromTop, animations: { () -> Void in
+//                    self.warningMessage.hidden = false
+//                    }, completion: nil)
+//        }
     }
     /*
     // MARK: - Navigation

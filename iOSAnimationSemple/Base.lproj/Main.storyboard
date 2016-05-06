@@ -592,6 +592,7 @@
                         <outlet property="login" destination="nCd-px-KJi" id="Ugi-qz-UhX"/>
                         <outlet property="loginLeading" destination="mpq-54-b5a" id="tWB-FF-hZF"/>
                         <outlet property="loginTopConstraint" destination="wqO-1L-q0J" id="5DY-jZ-5vn"/>
+                        <outlet property="loginTrailing" destination="bDI-zC-hB7" id="vID-Xo-EnJ"/>
                         <outlet property="logo" destination="uyP-Vl-ke6" id="szP-EU-oRU"/>
                         <outlet property="password" destination="YIb-St-OPs" id="v62-1K-tHT"/>
                         <outlet property="username" destination="Q5t-cg-Nkc" id="ihf-66-U5B"/>
