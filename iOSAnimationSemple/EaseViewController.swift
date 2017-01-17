@@ -29,7 +29,7 @@ class EaseViewController: UIViewController {
         super.viewDidAppear(animated)
         
         UIView.animateWithDuration(1, animations: {
-        self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
+            self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
         })
         
         UIView.animateWithDuration(1, delay: 0, options: .CurveEaseIn, animations: {
@@ -38,11 +38,11 @@ class EaseViewController: UIViewController {
         
         UIView.animateWithDuration(1, delay: 0, options: .CurveEaseOut, animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
-            }, completion: nil)
+        }, completion: nil)
         
         UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: {
             self.purpleSquare.center.x = self.view.bounds.width - self.purpleSquare.center.x
-            }, completion: nil)
+        }, completion: nil)
     }
 
     /*

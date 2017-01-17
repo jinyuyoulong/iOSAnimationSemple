@@ -29,15 +29,18 @@ class SpringViewController: UIViewController {
         super.viewDidAppear(animated)
         
         UIView.animateWithDuration(3, animations: {
-        self.blueSuqare.center.x = self.view.bounds.width - self.blueSuqare.center.x
+            self.blueSuqare.center.x = self.view.bounds.width - self.blueSuqare.center.x/2
         })
-        
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: {
-            self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x
+        // damping 阻尼
+        // spring 弹簧
+        // velocity 速度
+        // initialSpringVelocity 初始弹簧速度
+        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionNone, animations: {
+            self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x/2
         }, completion: nil)
         
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: UIViewAnimationOptions.TransitionNone, animations: {
-            self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
+        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 3, options: UIViewAnimationOptions.TransitionNone, animations: {
+            self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x/2
         }, completion: nil)
     }
 
